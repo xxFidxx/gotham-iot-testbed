@@ -5,7 +5,7 @@ import sys
 KONRO = "http://localhost:8080"
 REQ_NAME = "security"
 s = Server(*read_local_gns3_config())
-p = get_project_by_name(s, "gotham_scenario")
+p = get_project_by_name(s, "konro_scenario")
 regex = sys.argv[1]
 
 all_nodes = get_nodes_id_by_name_regexp(s,p, re.compile(regex))
