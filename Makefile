@@ -205,6 +205,10 @@ buildstatus/debug_client: Dockerfiles/iot/debug_client/Dockerfile
 	$(BUILD_CMD) --file $< --tag iotsim/debug-client Dockerfiles/iot/debug_client
 	@touch $@
 
+buildstatus/edge_worker: Dockerfiles/iot/edge_worker/Dockerfile
+	$(BUILD_CMD) --file $< --tag iotsim/edge-worker Dockerfiles/iot/edge_worker
+	@touch $@
+
 buildstatus/mqtt_client_t1_compromised: Dockerfiles/iot/compromised/Dockerfile.mqtt_client_t1 buildstatus/Merlin buildstatus/mqtt_client_t1
 	$(BUILD_CMD) --file $< --tag iotsim/mqtt-client-compromised-t1 Dockerfiles/iot/compromised
 	@touch $@
