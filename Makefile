@@ -21,6 +21,7 @@ all: buildstatus/DNS buildstatus/certificates buildstatus/NTP \
      buildstatus/city_power_cloud buildstatus/combined_cycle_cloud \
      buildstatus/ip_camera_street buildstatus/ip_camera_museum buildstatus/stream_server buildstatus/stream_consumer \
      buildstatus/mqtt_client_t1_compromised buildstatus/mqtt_client_t2_compromised buildstatus/coap_server_compromised \
+	 buildstatus/debug_client buildstatus/edge_worker \
      buildstatus/debug_client
 
 templates: Dockerfiles/certificates/Dockerfile Dockerfiles/DNS/dnsmasq.conf \
